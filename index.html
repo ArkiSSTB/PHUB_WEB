@@ -76,11 +76,15 @@
         </div>
     </div>
 
-    <section class="pricing" id="tariff">
-    <!--    <a href="#tariff" style="border-radius: 50%; ">ВСЕ ТАРИФЫ</a>-->
+    <script src="tariffs.js"></script>
+    <a href="#" onclick="showAll()" style="border-radius: 50%;">Все тарифы</a>
+    <a href="#" onclick="showSection('tariffs1')" style="border-radius: 50%;">Тарифы1</a>
+    <a href="#" onclick="showSection('tariffs2')" style="border-radius: 50%;">Тарифы2</a>
+    
+    <section class="pricing" id="allTariff">
         <div class="pricing-cards">
-            <div class="card">
-                <h4>Wine-1</h4>
+            <div class="card" id="tariffs1">
+                <h4>Тариф 1</h4>
                 <div class="price">Цена: <strong>50 ₽</strong> / Месяц</div>
                 <ul>
                     <li><i class="fas fa-microchip"></i>1 Ядро [125%]</li>
@@ -90,114 +94,53 @@
                     <li><i class="fas fa-database"></i>MYSQL: 1шт</li>
                     <li><i class="fas fa-cloud"></i>Бекапы: 1шт</li>
                 </ul>
-             <!--   <a href="https://example.com" class="button">Купить</a>-->
+                <a href="#" class="button">КУПИТЬ</a>
             </div>
-            <!--<div class="card">
-                <h4>Wine-2</h4>
+        
+            <div class="card" id="tariffs2">
+                <h4>Тариф 2</h4>
+                <div class="price">Цена: <strong>100 ₽</strong> / Месяц</div>
                 <ul>
-                    <li><i class="fas fa-microchip"></i>2 Ядрa [220%]</li>
-                    <li><i class="fas fa-memory"></i>5ГБ ОЗУ [5120мб]</li>
+                    <li><i class="fas fa-microchip"></i>2 Ядра [150%]</li>
+                    <li><i class="fas fa-memory"></i>6ГБ ОЗУ [6144мб]</li>
                     <li><i class="fas fa-hdd"></i>8ГБ SSD</li>
-                    <li><i class="fas fa-plug"></i>Порты: 4шт</li>
-                    <li><i class="fas fa-database"></i>MYSQL: 4шт</li>
+                    <li><i class="fas fa-plug"></i>Порты: 2шт</li>
+                    <li><i class="fas fa-database"></i>MYSQL: 2шт</li>
                     <li><i class="fas fa-cloud"></i>Бекапы: 2шт</li>
                 </ul>
-                <p class="price">Цена: 100р / Месяц</p>
-
+                <a href="#" class="button">КУПИТЬ</a>
             </div>
-            <div class="card">
-                <h4>Wine-3</h4>
+        
+            <div class="card" id="tariffs1">
+                <h4>Тариф 3</h4>
+                <div class="price">Цена: <strong>150 ₽</strong> / Месяц</div>
                 <ul>
-                    <li><i class="fas fa-microchip"></i>3 Ядра [300%]</li>
-                    <li><i class="fas fa-memory"></i>8ГБ ОЗУ [8192мб]</li>
+                    <li><i class="fas fa-microchip"></i>3 Ядра [175%]</li>
+                    <li><i class="fas fa-memory"></i>12ГБ ОЗУ [12288мб]</li>
+                    <li><i class="fas fa-hdd"></i>12ГБ SSD</li>
+                    <li><i class="fas fa-plug"></i>Порты: 3шт</li>
+                    <li><i class="fas fa-database"></i>MYSQL: 3шт</li>
+                    <li><i class="fas fa-cloud"></i>Бекапы: 3шт</li>
+                </ul>
+                <a href="#" class="button">КУПИТЬ</a>
+            </div>
+        
+            <div class="card" id="tariffs4" tariffs1>
+                <h4>Тариф 4</h4>
+                <div class="price">Цена: <strong>200 ₽</strong> / Месяц</div>
+                <ul>
+                    <li><i class="fas fa-microchip"></i>4 Ядра [200%]</li>
+                    <li><i class="fas fa-memory"></i>16ГБ ОЗУ [16384мб]</li>
                     <li><i class="fas fa-hdd"></i>16ГБ SSD</li>
-                    <li><i class="fas fa-plug"></i>Порты: 8шт</li>
-                    <li><i class="fas fa-database"></i>MYSQL: 8шт</li>
+                    <li><i class="fas fa-plug"></i>Порты: 4шт</li>
+                    <li><i class="fas fa-database"></i>MYSQL: 4шт</li>
                     <li><i class="fas fa-cloud"></i>Бекапы: 4шт</li>
                 </ul>
-                <p class="price">Цена: 250р / Месяц</p>
-
+                <a href="#" class="button">КУПИТЬ</a>
             </div>
-            <div class="card">
-                <h4>Wine-4</h4>
-                <ul>
-                    <li><i class="fas fa-microchip"></i>4 Ядрa [420%]</li>
-                    <li><i class="fas fa-memory"></i>12ГБ ОЗУ [12228мб]</li>
-                    <li><i class="fas fa-hdd"></i>32ГБ SSD</li>
-                    <li><i class="fas fa-plug"></i>Порты: 16шт</li>
-                    <li><i class="fas fa-database"></i>MYSQL: 16шт</li>
-                    <li><i class="fas fa-cloud"></i>Бекапы: 8шт</li>
-                </ul>
-                <p class="price">Цена: 550р / Месяц</p>
-
-            </div>
-            <div class="card">
-                <h4>Wine-5</h4>
-                <ul>
-                    <li><i class="fas fa-microchip"></i>5 Ядeр [500%]</li>
-                    <li><i class="fas fa-memory"></i>16ГБ ОЗУ [16384мб]</li>
-                    <li><i class="fas fa-hdd"></i>64ГБ SSD</li>
-                    <li><i class="fas fa-plug"></i>Порты: 32шт</li>
-                    <li><i class="fas fa-database"></i>MYSQL: 32шт</li>
-                    <li><i class="fas fa-cloud"></i>Бекапы: 12шт</li>
-                </ul>
-                <p class="price">Цена: 880р / Месяц</p>
-
-            </div>
-            <div class="card">
-                <h4>Wine-6</h4>
-                <ul>
-                    <li><i class="fas fa-microchip"></i>6 Ядeр [600%]</li>
-                    <li><i class="fas fa-memory"></i>24ГБ ОЗУ [24576мб]</li>
-                    <li><i class="fas fa-hdd"></i>72ГБ SSD</li>
-                    <li><i class="fas fa-plug"></i>Порты: 48шт</li>
-                    <li><i class="fas fa-database"></i>MYSQL: 48шт</li>
-                    <li><i class="fas fa-cloud"></i>Бекапы: 16шт</li>
-                </ul>
-                <p class="price">Цена: 1100р / Месяц</p>
-
-            </div>
-            <div class="card">
-                <h4>Wine-7</h4>
-                <ul>
-                    <li><i class="fas fa-microchip"></i>7 Ядeр [700%]</li>
-                    <li><i class="fas fa-memory"></i>32ГБ ОЗУ [32768мб]</li>
-                    <li><i class="fas fa-hdd"></i>94ГБ SSD</li>
-                    <li><i class="fas fa-plug"></i>Порты: 64шт</li>
-                    <li><i class="fas fa-database"></i>MYSQL: 64шт</li>
-                    <li><i class="fas fa-cloud"></i>Бекапы: 24шт</li>
-                </ul>
-                <p class="price">Цена: 1600р / Месяц</p>
-
-            </div>
-            <div class="card">
-                <h4>Wine-8</h4>
-                <ul>
-                    <li><i class="fas fa-microchip"></i>8 Ядeр [800%]</li>
-                    <li><i class="fas fa-memory"></i>49ГБ ОЗУ [49152мб]</li>
-                    <li><i class="fas fa-hdd"></i>102ГБ SSD</li>
-                    <li><i class="fas fa-plug"></i>Порты: 64шт</li>
-                    <li><i class="fas fa-database"></i>MYSQL: 64шт</li>
-                    <li><i class="fas fa-cloud"></i>Бекапы: 32шт</li>
-                </ul>
-                <p class="price">Цена: 2100 / Месяц</p>
-
-            </div>
-            <div class="card">
-                <h4>Wine-9</h4>
-                <ul>
-                    <li><i class="fas fa-microchip"></i>10 Ядeр [1050%]</li>
-                    <li><i class="fas fa-memory"></i>64ГБ ОЗУ [65536мб]</li>
-                    <li><i class="fas fa-hdd"></i>128ГБ SSD</li>
-                    <li><i class="fas fa-plug"></i>Порты: 64шт</li>
-                    <li><i class="fas fa-database"></i>MYSQL: 64шт</li>
-                    <li><i class="fas fa-cloud"></i>Бекапы: 48шт</li>
-                </ul>
-                <p class="price">Цена: 3500р / Месяц</p>
-
-            </div> -->
         </div>
     </section>
+    
 
 
     <footer>

@@ -279,26 +279,11 @@ h1#reason::after {
 }
 
 
-.card .button {
-  margin-top: 10px;
-  background-color: #8a2be2;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.pricing .button {
-  margin-bottom: 20px;
-  background-color: #8a2be2;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-decoration: none;
-}
+
 
 .button {
-background-color: #6a0dad;
-border: none; 
+background: linear-gradient(to top, #4D2673, #7E4EAE);
+border: 2px solid rgba(157, 85, 200, 1);
 border-radius: 25px;
 padding: 10px 20px;
 color: #fff;
@@ -306,35 +291,32 @@ font-size: 16px;
 cursor: pointer;
 transition: background-color 0.3s;
 text-decoration: none;
+margin-top: 1px;
 }
 
-.button:hover {
-background-color: #8a2be2;
-}
 
 .pricing {
     padding: 50px 20px;
 }
 
-.pricing-title {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 40px;
-}
-
 .pricing-cards {
     display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам переходить на новую строку */
     justify-content: center;
-    gap: 20px; /* Промежуток между карточками */
+    gap: 48px; /* Промежуток между карточками */
+    margin-bottom: 48px;
+    width: 900px; /* Фиксированная ширина контейнера карточек */
+    margin: 0 auto;
 }
 
 .card {
     background-color: #323131;
     border-radius: 40px;
-    padding: 20px;
-    width: 223px; 
+    width: 250px; /* Фиксированная ширина карточки */
     text-align: center;
     transition: transform 0.3s; 
+    height: 450px;
+    box-sizing: border-box; /* Учитывает отступы и границы в ширине */
 }
 
 .card:hover {
@@ -349,15 +331,16 @@ background-color: #8a2be2;
 .card .price {
     font-size: 16px;
     background-color: #292929;
-    padding: 10px;
+    padding: 14px;
+
     margin-bottom: 17px; /* Отступ снизу */
-  
 }
 
 .card ul {
     list-style: none;
     padding: 0; 
     margin: 0; 
+    margin-bottom: 35px;
 }
 
 .card ul li {
@@ -369,6 +352,8 @@ background-color: #8a2be2;
 .card ul li i {
     margin-right: 10px; /* Отступ между иконкой и текстом */
 }
+
+
 
 
 
